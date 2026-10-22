@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 32px 0 40px;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+  margin-bottom: 32px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-name {
+  font-weight: 800;
+}
+
+.logo-bracket {
+  color: var(--accent-purple);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--accent-purple);
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

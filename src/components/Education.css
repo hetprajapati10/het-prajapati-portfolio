@@ -1,0 +1,121 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.edu-col-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.edu-cards, .cert-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 22px;
+}
+
+.edu-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.edu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edu-type {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.edu-degree {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.edu-institution {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.edu-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.edu-duration {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.edu-grade {
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.cert-icon {
+  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.cert-name {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.cert-issuer {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
